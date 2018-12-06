@@ -10,15 +10,13 @@
    key = (word, doc_id)
    value = 1
 
-   Input: None
+   Input: stdin
    Output: ((word, doc_id), 1)
 """
 
 import sys
 import os
-import string
 import re
-import glob
 
 stopwords = open('utils/stopwords_en.txt').read().split("\n")
 current_filename = ""
